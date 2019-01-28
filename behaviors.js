@@ -16,11 +16,11 @@ EJEMPLO BASÍCO: */
 
 }(jQuery);
 
-Drupal.behaviors.awesome(namespace) = {
+Drupal.behaviors.awesome/* <--(namespace) */ = {
   attach/* <--(contiene la función real que debe ejecutarse.) */: function (context/* <--(contendrá todo el documento y después de una solicitud AJAX tendrá todos los elementos recién cargados), settings(contiene información pasada a JavaScript a través de PHP,) */) {
 
-    $('main', context', context).once('awesome')'/* <--(se asegurará que el código solo se ejecute una vez.) */.append('<p>Hello world</p>');
+    $('main', context).once('awesome')/* <--(se asegurará que el código solo se ejecute una vez.) */.append('<p>Hello world</p>');
   }
 };
 
-}(jQuery));
+}(jQuery);
