@@ -6,6 +6,13 @@ Los behaviors de Drupal le permiten anular o ampliar el comportamiento existente
 COMO SE UTILIZA:
 los behaviors siguen siendo parte de JavaScript en el núcleo. Estos behaviors se ejecutarán en cada solicitud, incluidas las solicitudes AJAX.
 
+
+Este objeto se ejecuta despues de cargar todo el documento y las llamadas ajax para hacer la ejecucion mas rapida.
+este objeto es el equivalente en Jquery a:
+$(document).ready(function(){
+  //todas las funciones aquí.
+});
+
 EJEMPLO BASÍCO: */
 
   Drupal.behaviors.awesome = {
